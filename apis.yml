@@ -1,23 +1,52 @@
 aid: belong336d
+
 name: Belong336d
-description: 'Belong336d is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Belong336d is a stub entry in the API Evangelist catalog with no publicly available website or detailed information. Attempts to access a listed EquityZen page resulted in a 403 error, and rendering attempts failed, indicating the company may not have an active public web presence. Consequently, the description reflects the lack of accessible data about its services, products, or API offerings, and serves as a placeholder until further information becomes available.'
+
 url: https://raw.githubusercontent.com/api-evangelist/belong336d/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Technology
+- Platform
+- API
+- Data
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/belong336d
+
+  - type: Hosts
+    url: hosts/belong336d-hosts.yml
+  - type: Vendors
+    url: vendors/belong336d-vendors.yml
+  - type: DomainSecurity
+    url: security/belong336d-domain-security.yml
+  - type: Website
+    url: https://equityzen.com/company/belong336d
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: minimal
+  artifacts_added: 2
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
